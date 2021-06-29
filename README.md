@@ -42,7 +42,7 @@ Acesse a pasta app-mobile e faça as instalações:
 
 ```
 # Acesse a pasta do mobile
-$ cd app-mobile/
+$ cd app-gameplay/
 
 # Instale as dependencias
 $ npm install ou expo start
