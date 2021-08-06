@@ -2,12 +2,9 @@ import React, { ReactNode } from "react";
 import { View, Text } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 
-
 import { LinearGradient } from 'expo-linear-gradient';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import { Feather } from "@expo/vector-icons";
-
-
 
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
@@ -45,10 +42,13 @@ export function Header({ title, action }: Props) {
        </Text>
 
        {
-         action &&
+         action
+         ?
          <View>
           { action }
-         </View> 
+         </View>
+         :
+         <View style={{ width: 24}} /> 
        }
      </LinearGradient>
   );

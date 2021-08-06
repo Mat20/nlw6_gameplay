@@ -57,4 +57,4 @@ export function Category({
      </RectButton>
   );
 }
-export default Category;
+
